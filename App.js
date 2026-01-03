@@ -25,11 +25,27 @@ export default function App() {
         </View>
 
         {/* Projects */}
-        <View style={styles.section}>
-          <Text style={styles.sectionHeader}>Projects</Text>
-          <Text>• Marketing case study</Text>
-          <Text>• Sustainability project</Text>
-        </View>
+<View style={styles.section}>
+  <Text style={styles.sectionHeader}>Projects</Text>
+
+  <View style={styles.projectCard}>
+    <Text style={styles.projectTitle}>Marketing Strategy Case</Text>
+    <Text>
+      Developed a go-to-market strategy for a consumer brand, focusing on
+      positioning, segmentation, and messaging.
+    </Text>
+    <Text style={styles.tech}>Tools: Market Research, STP, Presentation</Text>
+  </View>
+
+  <View style={styles.projectCard}>
+    <Text style={styles.projectTitle}>Sustainability Initiative</Text>
+    <Text>
+      Worked on a sustainability-focused project analysing environmental impact
+      and long-term value creation for businesses.
+    </Text>
+    <Text style={styles.tech}>Tools: Lifecycle Thinking, ESG Analysis</Text>
+  </View>
+</View>
 
         {/* Contact */}
         <View style={styles.section}>
@@ -51,4 +67,22 @@ const styles = StyleSheet.create({
   intro: { textAlign: 'center', marginVertical: 12 },
   section: { padding: 20 },
   sectionHeader: { fontSize: 18, fontWeight: 'bold', marginBottom: 6 },
+  projectCard: {
+  marginTop: 12,
+  padding: 12,
+  borderWidth: 1,
+  borderColor: '#ddd',
+  borderRadius: 6,
+},
+
+projectTitle: {
+  fontWeight: 'bold',
+  marginBottom: 4,
+},
+
+tech: {
+  marginTop: 6,
+  fontSize: 12,
+  color: '#555',
+},
 });
