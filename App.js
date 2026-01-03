@@ -47,12 +47,13 @@ export default function App() {
   </View>
 </View>
 
-        {/* Contact */}
-        <View style={styles.section}>
-          <Text style={styles.sectionHeader}>Contact</Text>
-          <Text>Email: radhatole@gmail.com</Text>
-          <Text>LinkedIn: linkedin.com/in/radhatole</Text>
-        </View>
+       {/* Contact */}
+<View style={styles.section}>
+  <Text style={styles.sectionHeader}>Contact</Text>
+  <Text>Email: radhatole@gmail.com</Text>
+  <Text>LinkedIn: linkedin.com/in/radhatole</Text>
+  <Text>GitHub: github.com/radtoles</Text>
+</View>
 
       </ScrollView>
     </SafeAreaView>
